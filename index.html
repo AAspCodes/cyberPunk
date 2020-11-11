@@ -9,6 +9,9 @@
             background-color: black;
             color: green;
         }
+        font{
+            color:green;
+        }
 
     </style>
 </head>
@@ -55,12 +58,9 @@
         var text = document.getElementById("passwordinput").value;
         if (text.toLowerCase() == "bachar") {
             document.location="essay.html";
-
             console.log("access granted");
-            document.getElementById("tester").style.color="green";
         } else {
             console.log("not granted");
-            document.getElementById("tester").style.color="red";
             if(attempts > 0){
                 attempts--;
             };
