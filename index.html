@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: grey;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<h1>Welcome</h1>
+
+<p>to enter the secret club, click for entry clue</p>
+
+<button onclick="document.getElementById('testing').style.display='block'">secret knock</button>
+
+<div id="testing" style="display: none;">
+    <h2>riddle(etc...)</h2>
+    <img src="" width="214" height="204">
+</div>
+
+<input type="text" id='passwordinput'>
+<button onclick="validate()">
+    attempt
+</button>
+<br>
+<br>
+<h1 onclick="document.body.style.color='blue';">
+    hello
+</h1>
+
+
+<script>
+    function validate() {
+        var text = document.getElementById("passwordinput").value;
+        if (text == "password") {
+            //show something
+            console.log("access granted");
+        } else {
+            console.log("not granted");
+        }
+
+    }
+
+</script>
+
+
+</body>
+
+</html>
